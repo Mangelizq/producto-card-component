@@ -1,0 +1,28 @@
+{
+  "name": "producto-card-component",
+  "version": "1.0.0",
+  "description": "Componente de tarjeta de producto responsive con modal usando BEM, Sass y Bootstrap",
+  "main": "index.html",
+  "scripts": {
+    "sass:watch": "sass --watch scss:css",
+    "sass:build": "sass scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mangelizq/producto-card-component.git"
+  },
+  "keywords": [
+    "producto",
+    "card",
+    "modal",
+    "BEM",
+    "SCSS",
+    "Bootstrap",
+    "responsive"
+  ],
+  "author": "Miguel Izquierdo <miguel.izquierdoma@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}

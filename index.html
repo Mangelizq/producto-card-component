@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente de Tarjeta de Producto</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Nueva Línea de Productos</h1>
+        
+        <div class="row">
+            <!-- Tarjeta de Producto 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card card--product">
+                    <img src="https://via.placeholder.com/300x200?text=Producto+1" 
+                         alt="Producto Premium" 
+                         class="card--product__image">
+                    
+                    <div class="card--product__content">
+                        <h5 class="card--product__title">Producto Premium</h5>
+                        <p class="card--product__description">
+                            Descrición breve del producto. Destaca sus características principales.
+                        </p>
+                        <p class="card--product__price"><strong>$99.99</strong></p>
+                        
+                        <button class="btn btn-primary card--product__button" 
+                                data-toggle="modal" 
+                                data-target="#productoModal1">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta de Producto 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card card--product">
+                    <img src="https://via.placeholder.com/300x200?text=Producto+2" 
+                         alt="Producto Estándar" 
+                         class="card--product__image">
+                    
+                    <div class="card--product__content">
+                        <h5 class="card--product__title">Producto Estándar</h5>
+                        <p class="card--product__description">
+                            Descrición breve del producto. Ideal para uso general.
+                        </p>
+                        <p class="card--product__price"><strong>$59.99</strong></p>
+                        
+                        <button class="btn btn-primary card--product__button" 
+                                data-toggle="modal" 
+                                data-target="#productoModal2">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta de Producto 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card card--product">
+                    <img src="https://via.placeholder.com/300x200?text=Producto+3" 
+                         alt="Producto Básico" 
+                         class="card--product__image">
+                    
+                    <div class="card--product__content">
+                        <h5 class="card--product__title">Producto Básico</h5>
+                        <p class="card--product__description">
+                            Descrición breve del producto. Opción económica y confiable.
+                        </p>
+                        <p class="card--product__price"><strong>$39.99</strong></p>
+                        
+                        <button class="btn btn-primary card--product__button" 
+                                data-toggle="modal" 
+                                data-target="#productoModal3">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 1 - Producto Premium -->
+    <div class="modal fade" id="productoModal1" tabindex="-1" role="dialog" 
+         aria-labelledby="productoModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content card--product__modal">
+                <div class="modal-header card--product__modal--header">
+                    <h5 class="modal-title" id="productoModalLabel1">Detalles - Producto Premium</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                
+                <div class="modal-body card--product__modal--body">
+                    <h6 class="card--product__modal--subtitle">Especificaciones del Producto</h6>
+                    <ul class="list-unstyled">
+                        <li><strong>Material:</strong> Aluminio de alta calidad</li>
+                        <li><strong>Dimensiones:</strong> 25cm x 15cm x 10cm</li>
+                        <li><strong>Peso:</strong> 500g</li>
+                        <li><strong>Color:</strong> Disponible en múltiples colores</li>
+                        <li><strong>Garantía:</strong> 2 años</li>
+                        <li><strong>Envío:</strong> Gratis a nivel nacional</li>
+                    </ul>
+                    <p class="mt-3">
+                        <strong>Descripción Completa:</strong> Este producto premium combina diseño elegante 
+                        con funcionalidad superior. Perfectamente diseñado para usuarios que buscan calidad 
+                        y durabilidad sin compromisos.
+                    </p>
+                </div>
+                
+                <div class="modal-footer card--product__modal--footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Agregar al Carrito</button>
+                    <button type="button" class="btn btn-success">Comprar Ahora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 - Producto Estándar -->
+    <div class="modal fade" id="productoModal2" tabindex="-1" role="dialog" 
+         aria-labelledby="productoModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content card--product__modal">
+                <div class="modal-header card--product__modal--header">
+                    <h5 class="modal-title" id="productoModalLabel2">Detalles - Producto Estándar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                
+                <div class="modal-body card--product__modal--body">
+                    <h6 class="card--product__modal--subtitle">Especificaciones del Producto</h6>
+                    <ul class="list-unstyled">
+                        <li><strong>Material:</strong> Plástico premium resistente</li>
+                        <li><strong>Dimensiones:</strong> 22cm x 14cm x 9cm</li>
+                        <li><strong>Peso:</strong> 300g</li>
+                        <li><strong>Color:</strong> Disponible en 3 colores</li>
+                        <li><strong>Garantía:</strong> 1 año</li>
+                        <li><strong>Envío:</strong> $5 a nivel nacional</li>
+                    </ul>
+                    <p class="mt-3">
+                        <strong>Descripción Completa:</strong> Una opción versátil y confiable para uso diario. 
+                        Ofrece una excelente relación precio-calidad sin sacrificar características esenciales.
+                    </p>
+                </div>
+                
+                <div class="modal-footer card--product__modal--footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Agregar al Carrito</button>
+                    <button type="button" class="btn btn-success">Comprar Ahora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 - Producto Básico -->
+    <div class="modal fade" id="productoModal3" tabindex="-1" role="dialog" 
+         aria-labelledby="productoModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content card--product__modal">
+                <div class="modal-header card--product__modal--header">
+                    <h5 class="modal-title" id="productoModalLabel3">Detalles - Producto Básico</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                
+                <div class="modal-body card--product__modal--body">
+                    <h6 class="card--product__modal--subtitle">Especificaciones del Producto</h6>
+                    <ul class="list-unstyled">
+                        <li><strong>Material:</strong> Plástico estándar</li>
+                        <li><strong>Dimensiones:</strong> 20cm x 12cm x 8cm</li>
+                        <li><strong>Peso:</strong> 250g</li>
+                        <li><strong>Color:</strong> Blanco y Negro</li>
+                        <li><strong>Garantía:</strong> 6 meses</li>
+                        <li><strong>Envío:</strong> $8 a nivel nacional</li>
+                    </ul>
+                    <p class="mt-3">
+                        <strong>Descripción Completa:</strong> La opción económica para quienes buscan 
+                        funcionalidad básica a un precio accesible. Ideal para presupuestos ajustados sin 
+                        sacrificar lo esencial.
+                    </p>
+                </div>
+                
+                <div class="modal-footer card--product__modal--footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Agregar al Carrito</button>
+                    <button type="button" class="btn btn-success">Comprar Ahora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
