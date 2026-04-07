@@ -1,4 +1,9 @@
 
+/**
+ * VARIABLES DE CONFIGURACIÓN GLOBAL
+ * Paleta de colores, espaciados y transiciones
+ */
+
 // Variables de Color
 $color-primary: #3498db;
 $color-primary-dark: #2980b9;
@@ -14,6 +19,10 @@ $spacing-lg: 1.5em;
 
 // Variables de Transición
 $transition-speed: 0.3s ease;
+
+// Variables de Border Radius
+$border-radius-default: 8px;
+$border-radius-small: 4px;
 
 .card--product {
   display: flex;
